@@ -11,10 +11,13 @@ int main(void){
 	printf("Enter the monthly payment: ");
 	scanf("%f", &monthly_pay);
 
-	
+	/* conting the balance*/
+	float month1 = (loan*interest_rate) - monthly_pay;
+	float month2 = (month1 *interest_rate) - monthly_pay;
+	float month3 = (month * interest_rate) - monthly_pay;
 
 	
-	printf("Balance remaining after the first payment: %d", );
-	printf("Balance remaining after the second payment: %f", );
-	printf("Balance remaining after the third payment: %f ", );
+	printf("Balance remaining after the first payment: %f", month1);
+	printf("Balance remaining after the second payment: %f", month2);
+	printf("Balance remaining after the third payment: %f ", month3);
 }	
